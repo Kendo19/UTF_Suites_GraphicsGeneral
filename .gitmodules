@@ -1,0 +1,15 @@
+[submodule "Assets/UTF_Core"]
+	path = Assets/UTF_Core
+	url = https://github.com/Unity-Technologies/UTF_Core.git
+[submodule "Assets/UTF_Camera"]
+	path = Assets/UTF_Camera
+	url = https://github.com/Unity-Technologies/UTF_Tests_Camera.git
+[submodule "Assets/UTF_Textures"]
+	path = Assets/UTF_Textures
+	url = https://github.com/Unity-Technologies/UTF_Tests_Texture.git
+[submodule "Assets/UTF_Shaders"]
+	path = Assets/UTF_Shaders
+	url = https://github.com/Unity-Technologies/UTF_Tests_Shader.git
+[submodule "Assets/UTF_Meshes"]
+	path = Assets/UTF_Meshes
+	url = https://github.com/Unity-Technologies/UTF_Tests_Mesh.git
