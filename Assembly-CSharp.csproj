@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{EA493EFD-401B-73DB-D1EE-060C2EC14B06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;UTF_EXISTS;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\UTF_Camera\Scenes\CameraSettings\HDR\BasicPost.cs" />
+     <Compile Include="Assets\UTF_Camera\Scripts\CullingCheck.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Broadcast.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Common.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Console.cs" />
+     <Compile Include="Assets\UTF_Core\Core\IO\JSONHelper.cs" />
+     <Compile Include="Assets\UTF_Core\Core\IO\LocalIO.cs" />
+     <Compile Include="Assets\UTF_Core\Core\IO\ResultsIO.cs" />
+     <Compile Include="Assets\UTF_Core\Core\IO\SQLIO.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Dialogue.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\Menu.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\MenuBreadcrumbEntry.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\MenuListEntry.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\MenuResolveListEntry.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\MenuSelectionToggle.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\Menu\MenuSettings.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\ProgressScreen.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\ResultsViewer\ResultsContext.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\ResultsViewer\ResultsEntry.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\ResultsViewer\ResultsViewer.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewer.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerNavbar.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerSlider.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerStatistics.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerStatisticsEntry.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerTab.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Interface\TestViewer\TestViewerToolbar.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Master.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Settings\ProjectSettings.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Settings\TestSettings.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\Configuration.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\Suite.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\SuiteManager.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\TestRunner.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\TestStructure.cs" />
+     <Compile Include="Assets\UTF_Core\Core\Structure\TestTypeManager.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Debug\CameraDebug.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Math\NoiseGenerator.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Math\Perlin.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Math\XXHash.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Motion\BrownianMotion.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Motion\ConstantMotion.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Slack\MiniJSON.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\Slack\Slack.cs" />
+     <Compile Include="Assets\UTF_Core\CoreUtility\String\StringToUI.cs" />
+     <Compile Include="Assets\UTF_Core\DebugSuite\Scripts\FrameStall.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\AverageFrameTime\AverageFrameTimeDisplay.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\AverageFrameTime\AverageFrameTimeLogic.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\AverageFrameTime\AverageFrameTimeModel.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\Example\ExampleDisplay.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\Example\ExampleLogic.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\Example\ExampleModel.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\FrameComparison\FrameComparisonDisplay.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\FrameComparison\FrameComparisonLogic.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\FrameComparison\FrameComparisonModel.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\TestDisplay.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\TestLogic.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\TestModel.cs" />
+     <Compile Include="Assets\UTF_Core\TestRunners\TestTypes.cs" />
+     <Compile Include="Assets\UTF_Meshes\Scripts\AnimRandomStart.cs" />
+     <Compile Include="Assets\UTF_Meshes\Scripts\MeshAPI\ProceduralMesh.cs" />
+     <Compile Include="Assets\UTF_Meshes\Scripts\MeshRendererAPI.cs" />
+     <Compile Include="Assets\UTF_Meshes\Scripts\SkinnedMeshBaker.cs" />
+     <Compile Include="Assets\UTF_Shaders\HLSLsnippets\ShaderInfo.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\ColourCycle.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\ColourCycleStatic.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\CreateCubemapArray.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\HSBColor.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\InfoCam.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\Instancing.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\InstancingRandom.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\MeshColor.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\MetallicGlossBalls.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\MiniProfiler.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\NextScene.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\SubstanceRandomSeed.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\TessellationMaterial.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\TexOffset.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\TextureArray.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\ToggleObjects.cs" />
+     <Compile Include="Assets\UTF_Shaders\Scripts\ValueCycle.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\ArrayOfStruct.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\BasicComputeShader.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\ComputeShaderParticle\CameraRender2.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\ComputeShaderParticle\PlaceObjects.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\ComputeShaderParticle\TestParticle2.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\ComputeShader\IndirectComputeShader.cs" />
+     <Compile Include="Assets\UTF_Shaders\Shaders\Misc\HideIfDisabledDrawer.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\AnisotrpicTextures.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CRTscripts\CustomTextureHandler.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CRTscripts\ProjectileController.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CRTscripts\SceneController.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CRTscripts\ShootProjectiles.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CRTscripts\chain_1_updating.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\CamFocus.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\Cubemap_GetPixels.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\FilteringTexture.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\FormatGeneratorConvert.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\FormatGeneratorCopy.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\FormatGenerator_GetPixels.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\FormatGenerator_SetPixels.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\LabelMaker.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\MipTexture.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\Rotator.cs" />
+     <Compile Include="Assets\UTF_Textures\Scripts\WrapModeTeture.cs" />
+     <None Include="Assets\UTF_Shaders\Shaders\Features\Variant_MultiCompile.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_integers.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Alphatest_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Float4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\GeometryShader\AllShaderStages_nointerpolation.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_50.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\Stencil_Opaque_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler_Macro_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Opaque_SurfBackground.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_20.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_25.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\VertDisp.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_30.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_compute.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\Normal.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Fixed2.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_20.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\Offset_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_derivatives.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_20.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_instancing.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\FixedFunctionShader\Basic.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_sparsetex.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_35.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_alpha_auto.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\GeometryShader\AllShaderStages.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Features\Outline_Opaque_MultipassSurf.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\Shooting_custom.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Float2.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Default_Lambert.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Opaque_Unlit.shader" />
+     <None Include="Assets\UTF_Core\CoreAssets\UnityHDRI\TrinitatisChurch\Info.txt" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Combine_sparsetex_tesshw_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Keyword2_cubearray_compute.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_derivatives.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler3D_Macro_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_compute.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_samplelod.shader" />
+     <None Include="Assets\UTF_Core\Core\Build\Editor\EditorCoroutine\Readme - v1.0.0.txt" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Float3.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Cutout_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_samplelod.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_instancing.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_sparsetex.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_compute.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_interpolators32.shader" />
+     <None Include="Assets\UTF_Textures\Shaders\3dTextureCheck.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Int4x4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Opaque_SurfVert.shader" />
+     <None Include="Assets\UTF_Core\CoreUtility\Debug\Resources\CameraDebug.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_alpha_fade.shader" />
+     <None Include="Assets\UTF_Core\CoreAssets\UnityHDRI\KirbyCove\Info.txt" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Fixed.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\ComputeShader\ComputeShaderParticle\moveParticle2.compute" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\Tangent.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_framebuffer.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_interpolators15.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_compute.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_46.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_instancing.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_sparsetex.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Unlit_Multiply.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_compute.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_25.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_35.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Opaque_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_integers.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Opaque_UnlitOverlay.shader" />
+     <None Include="Assets\UTF_Textures\Shaders\CubemapCheck.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\GeometryShader\WireframeShader.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_interpolators15.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_SurfaceOutputStandard.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\ComputeShader\ComputeShaderParticle\ComputeShaderParticle2.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_40.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Custom_DiffuseWrap.shader" />
+     <None Include="Assets\UTF_Textures\Shaders\TextureCheck.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_oninterpolation_int.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Custom_NoLighting.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_worldNormal.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_55.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_50.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_30.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\Cull_Transparent_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\NewPhong.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler_Inline_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_50.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_45.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_cubearray_surface.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_screenPos.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\Surf_Opaque_2Pass.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\Phong.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Features\Outline_Opaque_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_45.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_instancing.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_uv.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_SurfaceOutputStandardSpecular.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Unlit_Select.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_35.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\Binormal.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_framebuffer.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\chain_1_updating.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_cubearray_surface.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_30.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_fragcoordOLD.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_35.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\FallbackAndSubshader\Fallback.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\GeometryShader\AllShaderStages_nointerpolation_int.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Half3.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_samplelod.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_alpha_blend.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSamplerCube_Macro_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Surf.shader" />
+     <None Include="Assets\UTF_Meshes\Shaders\Huebow.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\Cubemap_custom.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_Multiply.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Int3.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_derivatives.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ColorMask_G_Opaque_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_40.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_derivatives.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Features\Variant_ShaderFeature.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_compute.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_SurfaceOutput.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_instancing.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\FallbackAndSubshader\UseSubShader.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_cubearray_surface.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Half4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\Cull_Transparent_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Keyword2_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_sparsetex.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_framebufferfetch.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_50.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_46.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Half2.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_40.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\MipShader.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_sparsetex.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\Tex3DShader_use.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Combine_tessellation_interpolator32.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_25.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_45.shader" />
+     <None Include="Assets\UTF_Meshes\Shaders\HueShader.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler_Macro_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Basic\Cutout_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Int2.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_mixed.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_interpolators15.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\AlphaToMask_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_sparsetex.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_20.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Fixed3.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_worldPos.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_46.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\Unlit_Opaque_2Pass.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_Select.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Custom_ToonRamp.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_AVAILABLE_35.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\ComputeShader\BasicComputeShader.compute" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\SCTCGSurf.cginc" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\FallingTargets_custom.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_interpolators15.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\input_localTexcoord_custom.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_25.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\UV1.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_viewDir.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\Unlit_Opaque.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\Stencil_Transparent_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Target_30.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\MultiPassShader.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ColorMask_B_Opaque_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_worldRefl.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\UV0.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_46.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_interpolators15.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_interpolators15.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Half.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_fragdepth.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_framebufferfetch.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Custom_SimpleSpecular.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Features\Outline_Opaque_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\DistanceBased.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Float.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\FixedFunctionShader\VertexLit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ColorMask_R_Opaque_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_worldNormal_internal.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\FallbackAndSubshader\NotSupported.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_alpha_premul.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_framebufferfetch.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_40.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Int.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_46.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_derivatives.shader" />
+     <None Include="Assets\UTF_Textures\Shaders\MipShader.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\Color.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_instancing.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\Tex3DShader_custom.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Require_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\ComputeShader\ArrayOfStruct_Surf.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_samplelod.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_tessellation.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\SCTCGUnlit.cginc" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_decal_add.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_integers.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_mrt8.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Half4x4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_FloatArray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_integers.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_30.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Misc\MaterialPropertyDrawer.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesNoTarget\NoTarget_samplelod.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Fixed4x4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\ComputeShader\IndirectComputeShader.compute" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_20.shader" />
+     <None Include="Assets\UTF_Camera\Scenes\CameraSettings\HDR\HalfBrightness.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_geometry.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_interpolators10.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\ZTest\Surf_Opaque.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_mrt4.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Target_45.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\RenderStates\All.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Blending\Transparent_Surf_decal_blend.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_framebufferfetch.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_50.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_integers.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Keyword_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_45.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_randomwrite.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_oninterpolation_float.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_TARGET_40.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\VertexInput\Position.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Combine_cubearray_2Darray.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_tesshw.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler_Inline_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Fixed4.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_derivatives.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceLighting\Default_BlinnPhong.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Float4x4.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_worldRefl_internal.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_AVAILABLE_cubearray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\SurfaceInputOutput\Surface_Input_color.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Unlit_Int4.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_interpolators32.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\Require\Macro_SHADER_REQUIRE_samplelod.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSampler3D_Inline_Unlit.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\FixedAmount.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_integers.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_25.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Tessellation\EdgeLengthBased.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\HLSLSnippets\Require_2darray.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\TextureSampler\TextureSamplerCube_Inline_Unlit.shader" />
+     <None Include="Assets\UTF_Textures\Materials\CRTmaterials\input_globalTexcoord_custom.shader" />
+     <None Include="Assets\UTF_Shaders\HLSLsnippets\Shaders\HLSLSnippets\FeaturesBeforeRequire\Feature_fragcoord.shader" />
+     <None Include="Assets\UTF_Shaders\Shaders\Instancing\Instancing_Surf_Vert.shader" />
+     <None Include="Assets\UTF_Core\CoreAssets\Scenes\Market\Shaders\ToonShader.shader" />
+     <None Include="Assets\UTF_Core\TestRunners\FrameComparison\Resources\FrameComparison.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity_Installs/Unity 5.6/Unity-5.6.3p4/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
